@@ -44,7 +44,7 @@ const Container = styled('div')({
 
 const Column1 = styled('div')({
     minWidth: '45vw',
-    minHeight: '50vh',
+    // minHeight: '50vh',
     backgroundColor: theme.palette.background,
     backgroundSize: 'cover',
     display: 'flex',
@@ -57,7 +57,7 @@ const Column1 = styled('div')({
 
 const Column2 = styled('div')({
     minWidth: '45vw',
-    minHeight: '50vh',
+    // minHeight: '50vh',
     backgroundColor: theme.palette.background,
     backgroundSize: 'cover',
     display: 'flex',
@@ -138,10 +138,10 @@ function Footer({ title, body1, body2, changeSection, Button }) {
             <Divider />
 
             <Column2>
-                <Typography id="#footer" variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
+                <Typography id="#footer" variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2em'}}>
                     Info
                 </Typography>
-                <Typography  variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '0 3rem'}}>
+                <Typography  variant="body1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '0 3rem'}}>
                     123-456-7890
                     <br />
                     info@thehelperorg.com
@@ -149,7 +149,7 @@ function Footer({ title, body1, body2, changeSection, Button }) {
 
                     <a href={links.linkedin} className="fade-in"><LinkedInIcon sx={hoverSX} /></a>
                     <a href={links.facebook} className="fade-in"><FacebookIcon sx={hoverSX} /></a>
-                    <a href={links.instagram} className="fade-in"><InstagramIcon sx={hoverSX} /></a>
+                    <a href={links.instagram} className="fade-in"><InstagramIcon sx={hoverSX} style={{ marginRight: 0 }}/></a>
                 </Typography>
 
                 <div>
