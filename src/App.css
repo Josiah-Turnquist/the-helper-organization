@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2F342C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: inherit;
+  text-decoration-line: none;
+  color: #FFFFEE;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #FB8546;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-duration: .15s;
+}
+
+@font-face {
+  font-family: 'Bayon';
+  letter-spacing: 20px;
+  src: local('Bayon'), url(../public/fonts/Bayon.ttf) format('truetype');
 }

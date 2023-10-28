@@ -1,0 +1,26 @@
+.logo {
+    margin: 14px 23px;
+    text-wrap: nowrap;
+}
+
+.navbar-button {
+    margin: 6px 15px;
+    align-self: center;
+    text-wrap: nowrap;
+}
+
+.fade-in {
+    animation: fadein 3s ease-in-out;
+}
+
+@keyframes fadein {
+    0% { opacity: 0 }
+    20% { opacity: 0 }
+    100%  { opacity: 1 }
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+  }
