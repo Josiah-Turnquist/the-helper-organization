@@ -131,15 +131,11 @@ function TeamMembers() {
 }
 
 const MissionContainer = styled('div')({
-    backgroundImage: `url(${Bible})`,
     width: '100vw',
     minHeight: '50vh',
-    // background: theme.palette.background3,
-    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     background: `linear-gradient(0deg, rgba(0 0 0 / 74%), rgba(0 0 0 / 89%)), url(${Bible})`,
-    // '@media (max-width:800px)': {
-    //     backgroundColor: theme.palette.background2Nav, /*241818*/
-    // },
+    backgroundSize: 'cover',
 });
 
 export default function HomePage() {
@@ -188,12 +184,12 @@ export default function HomePage() {
             {bannerSubtitle}
         </Typography>
         <div>
-            <Button bWidth={width} style={{ marginLeft: '10vw' }} >
+            <Button className="fade-in" bWidth={width} style={{ marginLeft: '10vw' }} >
                 <Typography variant="subtitle1" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
                     Give
                 </Typography>
             </Button>
-            <Button bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
+            <Button className="fade-in" bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
                 <Typography variant="subtitle1" style={{ color: theme.palette.primary.black, textAlign: 'center'}}>
                     Subscribe
                 </Typography>
