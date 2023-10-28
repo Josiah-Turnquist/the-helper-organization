@@ -131,15 +131,11 @@ function TeamMembers() {
 }
 
 const MissionContainer = styled('div')({
-    backgroundImage: `url(${Bible})`,
     width: '100vw',
     minHeight: '50vh',
-    // background: theme.palette.background3,
-    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     background: `linear-gradient(0deg, rgba(0 0 0 / 74%), rgba(0 0 0 / 89%)), url(${Bible})`,
-    // '@media (max-width:800px)': {
-    //     backgroundColor: theme.palette.background2Nav, /*241818*/
-    // },
+    backgroundSize: 'cover',
 });
 
 export default function HomePage() {
