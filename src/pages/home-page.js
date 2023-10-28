@@ -184,12 +184,12 @@ export default function HomePage() {
             {bannerSubtitle}
         </Typography>
         <div>
-            <Button bWidth={width} style={{ marginLeft: '10vw' }} >
+            <Button className="fade-in" bWidth={width} style={{ marginLeft: '10vw' }} >
                 <Typography variant="subtitle1" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
                     Give
                 </Typography>
             </Button>
-            <Button bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
+            <Button className="fade-in" bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
                 <Typography variant="subtitle1" style={{ color: theme.palette.primary.black, textAlign: 'center'}}>
                     Subscribe
                 </Typography>
