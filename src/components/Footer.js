@@ -38,13 +38,12 @@ const Container = styled('div')({
     justifyContent: 'space-evenly',
     '@media (max-width:700px)': {
         flexDirection: 'column',
-        // backgroundColor: theme.palette.background2Nav, /*241818*/
     },
 });
 
 const Column1 = styled('div')({
     minWidth: '45vw',
-    minHeight: '50vh',
+    // minHeight: '50vh',
     backgroundColor: theme.palette.background,
     backgroundSize: 'cover',
     display: 'flex',
@@ -57,15 +56,15 @@ const Column1 = styled('div')({
 
 const Column2 = styled('div')({
     minWidth: '45vw',
-    minHeight: '50vh',
+    // minHeight: '50vh',
     backgroundColor: theme.palette.background,
     backgroundSize: 'cover',
     display: 'flex',
     alignItems: 'left',
     flexDirection: 'column',
-    // '@media (max-width:800px)': {
-    //     backgroundColor: theme.palette.background2Nav, /*241818*/
-    // },
+    '@media (max-width:800px)': {
+        marginBottom: '40px',
+    },
 });
 
 const Divider = styled('div')({
@@ -74,9 +73,12 @@ const Divider = styled('div')({
     margin: '10% 0',
     backgroundColor: theme.palette.primary.white,
     backgroundSize: 'cover',
-    // '@media (max-width:800px)': {
-    //     backgroundColor: theme.palette.background2Nav, /*241818*/
-    // },
+    '@media (max-width:700px)': {
+        width: '70%',
+        height: '1px',
+        margin: '10% 0',
+        display: 'none'
+    },
 });
 
 function Footer({ title, body1, body2, changeSection, Button }) {
@@ -100,12 +102,13 @@ function Footer({ title, body1, body2, changeSection, Button }) {
                     <div style={{ height: '1px', width: '30px', backgroundColor: theme.palette.primary.white, marginLeft: '18px' }} />
                 </div>
 
-                <div style={{ display: 'flex', justifyContent: 'center', maxWidth: '355px', marginLeft: '2rem', marginRight: '2rem'  }}>
+                <div style={{ display: 'flex', justifyContent: 'center', maxWidth: '405px', margin: '0 2rem 2rem 2rem' }}>
                     <input placeholder="myemail@gmail.com" style={{
                         backgroundColor: '#00000000',
                         borderRadius: '6px',
                         borderColor: theme.palette.primary.white,
                         border: 'solid 1px',
+                        minWidth: '200px',
                         width: '30vw',
                         height: '36px',
                         paddingLeft: '0.75rem',
@@ -138,10 +141,10 @@ function Footer({ title, body1, body2, changeSection, Button }) {
             <Divider />
 
             <Column2>
-                <Typography id="#footer" variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
+                <Typography id="#footer" variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2rem 3rem 3rem 3rem'}}>
                     Info
                 </Typography>
-                <Typography  variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '0 3rem'}}>
+                <Typography  variant="body1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '0 3rem'}}>
                     123-456-7890
                     <br />
                     info@thehelperorg.com
@@ -149,7 +152,7 @@ function Footer({ title, body1, body2, changeSection, Button }) {
 
                     <a href={links.linkedin} className="fade-in"><LinkedInIcon sx={hoverSX} /></a>
                     <a href={links.facebook} className="fade-in"><FacebookIcon sx={hoverSX} /></a>
-                    <a href={links.instagram} className="fade-in"><InstagramIcon sx={hoverSX} /></a>
+                    <a href={links.instagram} className="fade-in"><InstagramIcon sx={hoverSX} style={{ marginRight: 0 }}/></a>
                 </Typography>
 
                 <div>

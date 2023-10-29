@@ -52,7 +52,7 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
   const TeamMember = styled('div')(({ props }) => ({
     width: '15%',
     minWidth: '195px',
-    margin: '0 0 20px 0',
+    margin: '0 0 20px 30px',
   }));
 
 
@@ -133,9 +133,9 @@ function TeamMembers() {
 const MissionContainer = styled('div')({
     width: '100vw',
     minHeight: '50vh',
-    backgroundPosition: 'center',
     background: `linear-gradient(0deg, rgba(0 0 0 / 74%), rgba(0 0 0 / 89%)), url(${Bible})`,
     backgroundSize: 'cover',
+    backgroundPosition: 'center',
 });
 
 export default function HomePage() {
@@ -196,11 +196,11 @@ export default function HomePage() {
             </Button>
         </div>
 
-        <div style={{ backgroundColor: theme.palette.background2, width: '100vw', minHeight: '80vh', marginTop: '20%'}}>
+        <div style={{ backgroundColor: theme.palette.background2, width: '100vw', marginTop: '20%'}}>
             <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
                 Who we are 
             </Typography>
-            <Typography variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', marginLeft: '3.2em', maxWidth: '89vw'}}>
+            <Typography variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '3.2em', maxWidth: '89vw'}}>
                 {ourStory}
             </Typography>
             <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
@@ -223,7 +223,7 @@ export default function HomePage() {
                 Our Mission
             </Typography>
         
-            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', marginLeft: '3.2em', maxWidth: (width < tablet ? '90vw' : '40vw')}}>
+            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '3.2em', maxWidth: (width < tablet ? '90vw' : '40vw')}}>
                 {mission}
             </Typography>
 
