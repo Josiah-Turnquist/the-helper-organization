@@ -70,7 +70,7 @@ let theme = createTheme({
     },
     body1: { // our story text
         fontSize: '18px',
-        lineHeight: '36px',
+        lineHeight: '32px',//'36px',
 
     },
   },
