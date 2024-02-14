@@ -106,7 +106,7 @@ function TeamMembers() {
 
                 </img>
                 <Typography variant="h1" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
-                    Hunter Lastname
+                    Hunter
                 </Typography>
                 <Typography variant="h3" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
                     FINANCE
