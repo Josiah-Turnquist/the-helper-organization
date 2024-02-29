@@ -5,7 +5,7 @@ export const links = {
     linkedin: "https://www.linkedin.com/company/the-helper-org/",
 }
 
-export const bannerTitle = "Share Your Prosperity to Save Lives.";
+export const bannerTitle = "Share Your Prosperity to Save Lives";
 export const bannerSubtitle = "Our goal is to financially support churches worldwide";
 
 export const ourStory = "At The Helper, our journey began with a simple yet profound belief: that every community, regardless of its location or circumstance, deserves the opportunity to flourish. Our mission is to provide support and funding to churches in underserved areas across the globe, helping them become beacons of hope, compassion, and positive change."
