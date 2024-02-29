@@ -89,11 +89,13 @@ function Footer({ title, body1, body2, changeSection, Button }) {
                 <Typography id="#mission" variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'center', textWrap: 'nowrap', margin: '2em'}}>
                     Join the Movement
                 </Typography>
-                <Button>
-                    <Typography variant="subtitle1" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
-                        Give Now
-                    </Typography>
-                </Button>
+                <a id="give" href="https://www.paypal.com/paypalme/thehelperorg">
+                    <Button >
+                        <Typography variant="subtitle1" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
+                            Give Now
+                        </Typography>
+                    </Button>
+                </a>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '2rem 0' }} >
                     <div style={{ height: '1px', width: '30px', backgroundColor: theme.palette.primary.white, marginRight: '18px' }} />
                         <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'center', fontSize: '20px'}}>
@@ -145,9 +147,9 @@ function Footer({ title, body1, body2, changeSection, Button }) {
                     Info
                 </Typography>
                 <Typography  variant="body1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '0 3rem'}}>
-                    123-456-7890
+                    +1 (619) 875-6137
                     <br />
-                    info@thehelperorg.com
+                    tcho@thehelperorg.com
                     <br />
 
                     <a href={links.linkedin} className="fade-in"><LinkedInIcon sx={hoverSX} /></a>

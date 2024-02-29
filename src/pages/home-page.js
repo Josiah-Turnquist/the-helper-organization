@@ -184,19 +184,21 @@ export default function HomePage() {
             {bannerSubtitle}
         </Typography>
         <div>
-            <Button className="fade-in" bWidth={width} style={{ marginLeft: '10vw' }} >
-                <Typography variant="subtitle1" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
-                    Give
-                </Typography>
-            </Button>
+            <a href="https://www.paypal.com/paypalme/thehelperorg">
+                <Button className="fade-in" bWidth={width} style={{ marginLeft: '10vw' }} >
+                    <Typography variant="subtitle1" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
+                        Give
+                    </Typography>
+                </Button>
+            </a>
             <Button className="fade-in" bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
-                <Typography variant="subtitle1" style={{ color: theme.palette.primary.black, textAlign: 'center'}}>
+                <Typography href="google.com" variant="subtitle1" style={{ color: theme.palette.primary.black, textAlign: 'center'}}>
                     Subscribe
                 </Typography>
             </Button>
         </div>
 
-        <div style={{ backgroundColor: theme.palette.background2, width: '100vw', marginTop: '20%'}}>
+        <div id="who-we-are" style={{ backgroundColor: theme.palette.background2, width: '100vw', marginTop: '20%'}}>
             <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
                 Who we are 
             </Typography>
@@ -219,7 +221,7 @@ export default function HomePage() {
                 width: '110vw',
                 zIndex: '-10',
             }}/>    */}
-        <   Typography id="#mission" variant="h1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
+        <   Typography id="mission" variant="h1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
                 Our Mission
             </Typography>
         

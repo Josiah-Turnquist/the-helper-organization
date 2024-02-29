@@ -53,7 +53,7 @@ function NavigationBar({ title, activeSection, sections, changeSection }) {
     return (
         <Bar onClick={() => {changeSection(title)}} className={`button transition-all ${activeSection === title ? 'on' : 'off' }`} >
              <a href="/" className="logo">
-                <Typography className="fade-in" variant="h1" color={theme.palette.primary.main}>
+                <Typography className="fade-inm" variant="h1" color={theme.palette.primary.main}>
                     The Helper
                 </Typography>
             </a>
