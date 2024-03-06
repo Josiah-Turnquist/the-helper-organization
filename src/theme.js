@@ -25,8 +25,16 @@ let theme = createTheme({
     background3: '#0A0A0A',
   },
   typography: {
+    logo: {
+      fontFamily: 'Bayon',
+      fontSize: '28px',
+      letterSpacing: '4.8px',
+      textTransform: 'uppercase',
+    },
     h1: {
-        fontFamily: 'Bayon',
+        fontFamily: 'Inter',
+        fontWeight: 600,
+        letterSpacing: '2.8px',
         fontSize: '28px',
         letterSpacing: '4.8px',
         textTransform: 'uppercase',
@@ -52,6 +60,21 @@ let theme = createTheme({
             fontSize: '20px'
           },
     },
+    team: {
+      fontFamily: 'Bayon',
+      fontSize: '28px',
+      letterSpacing: '4.8px',
+      textTransform: 'uppercase',
+      lineHeight: '1rem',
+    },
+    teamTitle: {
+      fontSize: '40px',
+      lineHeight: '115%',
+      textAlign: 'left',
+      '@media (max-width:800px)': {
+          fontSize: '2rem',
+        },
+    },
     subtitle1: { // Banner
         lineHeight: '18px',
         fontWeight: '500',
@@ -69,7 +92,7 @@ let theme = createTheme({
           },
     },
     body1: { // our story text
-        fontSize: '18px',
+        fontSize: '16px',
         lineHeight: '36px',
 
     },

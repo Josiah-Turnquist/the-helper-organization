@@ -86,7 +86,7 @@ function Footer({ title, body1, body2, changeSection, Button }) {
     return (
         <Container>
             <Column1>
-                <Typography id="#mission" variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'center', textWrap: 'nowrap', margin: '2em'}}>
+                <Typography id="#mission" variant="h1" style={{ color: theme.palette.primary.white, fontSize: '1.5rem', textAlign: 'center', textWrap: 'nowrap', margin: '2em'}}>
                     Join the Movement
                 </Typography>
                 <a id="give" href="https://www.paypal.com/paypalme/thehelperorg">
@@ -98,7 +98,7 @@ function Footer({ title, body1, body2, changeSection, Button }) {
                 </a>
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '2rem 0' }} >
                     <div style={{ height: '1px', width: '30px', backgroundColor: theme.palette.primary.white, marginRight: '18px' }} />
-                        <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'center', fontSize: '20px'}}>
+                        <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'center', fontSize: '1rem'}}>
                             OR
                         </Typography>
                     <div style={{ height: '1px', width: '30px', backgroundColor: theme.palette.primary.white, marginLeft: '18px' }} />
@@ -143,7 +143,7 @@ function Footer({ title, body1, body2, changeSection, Button }) {
             <Divider />
 
             <Column2>
-                <Typography id="#footer" variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2rem 3rem 3rem 3rem'}}>
+                <Typography id="#footer" variant="h1" style={{ color: theme.palette.primary.white, fontSize: '1.5rem', textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2rem 3rem 3rem 3rem'}}>
                     Info
                 </Typography>
                 <Typography  variant="body1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '0 3rem'}}>

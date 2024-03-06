@@ -45,14 +45,16 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    margin: '0 2rem',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
+    margin: (window.innerWidth < 650 ? '0rem' : '2em 2em 1em 2em'),
+    maxWidth: (window.innerWidth < 650 ? '750px' : '100vw'),
   }));
 
   const TeamMember = styled('div')(({ props }) => ({
     width: '15%',
-    minWidth: '195px',
-    margin: '0 0 20px 30px',
+    minWidth: '140px',
+    margin: (window.innerWidth < 650 ? '20px' : '3vw'),
   }));
 
 
@@ -66,6 +68,7 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
     minWidth: '120px',
     maxWidth: '150px',
     borderRadius: '1000px',
+    marginBottom: '0.2rem'
   };
 
 const transitionSX = {
@@ -83,10 +86,11 @@ function TeamMembers() {
                 <img src={CEO} alt="img of CEO" style={imageSX}>
 
                 </img>
-                <Typography variant="h1" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
+                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '0.5rem 0 0', textAlign: 'center'}}>
                     Tim Cho
                 </Typography>
-                <Typography variant="h3" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
+                <br />
+                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
                     CEO
                 </Typography>
             </TeamMember>
@@ -94,21 +98,47 @@ function TeamMembers() {
                 <img src={COO} alt="img of COO" style={imageSX}>
 
                 </img>
-                <Typography variant="h1" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
+                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
                     Josiah Turnquist
                 </Typography>
-                <Typography variant="h3" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
+                <br />
+                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
                     COO
+                </Typography>
+            </TeamMember>
+            <TeamMember>
+                <img src={Media} alt="img of Media Coordinator" style={imageSX}>
+
+                </img>
+                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
+                    TBA
+                </Typography>
+                <br />
+                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
+                    CFO
+                </Typography>
+            </TeamMember>
+            <TeamMember>
+                <img src={Media} alt="img of Media Coordinator" style={imageSX}>
+
+                </img>
+                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
+                    TBA
+                </Typography>
+                <br />
+                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
+                    CMO
                 </Typography>
             </TeamMember>
             <TeamMember>
                 <img src={Finance} alt="img of CFO" style={imageSX}>
 
                 </img>
-                <Typography variant="h1" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
-                    Hunter Lastname
+                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
+                    Hunter Queseda
                 </Typography>
-                <Typography variant="h3" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
+                <br />
+                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
                     FINANCE
                 </Typography>
             </TeamMember>
@@ -116,15 +146,14 @@ function TeamMembers() {
                 <img src={Media} alt="img of Media Coordinator" style={imageSX}>
 
                 </img>
-                <Typography variant="h1" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
+                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
                     Nathan Dungan
                 </Typography>
-                <Typography variant="h3" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
+                <br />
+                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
                     Media
                 </Typography>
-
             </TeamMember>
-
         </TeamWrapper>
 
     );
@@ -199,14 +228,14 @@ export default function HomePage() {
         </div>
 
         <div id="who-we-are" style={{ backgroundColor: theme.palette.background2, width: '100vw', marginTop: '20%'}}>
-            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
-                Who we are 
+            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2em 2em 1em 2em'}}>
+                WHO WE ARE
             </Typography>
-            <Typography variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '3.2em', maxWidth: '89vw'}}>
+            <Typography variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2.2em', maxWidth: '89vw'}}>
                 {ourStory}
             </Typography>
-            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em'}}>
-                our team
+            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2em 2em 1em 2em'}}>
+                OUR TEAM
             </Typography>
             <TeamMembers />
         </div>
@@ -225,7 +254,7 @@ export default function HomePage() {
                 Our Mission
             </Typography>
         
-            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '3.2em', maxWidth: (width < tablet ? '90vw' : '40vw')}}>
+            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2.2em', maxWidth: (width < tablet ? '90vw' : '40vw')}}>
                 {mission}
             </Typography>
 

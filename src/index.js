@@ -8,6 +8,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import "typeface-bayon";
+import "@fontsource/inter"; // Defaults to weight 400
+import "@fontsource/inter/400.css"; // Specify weight
 
 // Theme
 import { ThemeProvider } from '@mui/material/styles';
