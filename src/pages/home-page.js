@@ -45,8 +45,8 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
+    justifyContent: (window.innerWidth < 650 ? 'center' : 'flex-start'),
+    alignItems: (window.innerWidth < 650 ? '750px' : '100vw'),
     margin: (window.innerWidth < 650 ? '0rem' : '2em 2em 1em 2em'),
     maxWidth: (window.innerWidth < 650 ? '750px' : '100vw'),
   }));
