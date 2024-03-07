@@ -54,6 +54,7 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
   const TeamMember = styled('div')(({ props }) => ({
     width: '15%',
     minWidth: '140px',
+    maxWidth: '160px',
     margin: (window.innerWidth < 650 ? '20px' : '3vw'),
   }));
 
