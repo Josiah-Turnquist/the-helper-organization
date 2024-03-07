@@ -85,6 +85,7 @@ let theme = createTheme({
   },
     buttons: { // Banner
         lineHeight: '18px',
+        fontSize: '16px',
         fontWeight: '500',
         textAlign: 'left',
         // '@media (max-width:640px)': {
