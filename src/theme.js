@@ -30,6 +30,8 @@ let theme = createTheme({
       fontSize: '28px',
       letterSpacing: '4.8px',
       textTransform: 'uppercase',
+      fontWeight: '300',
+      lineHeight: '1.167',
     },
     h1: {
         fontFamily: 'Inter',
