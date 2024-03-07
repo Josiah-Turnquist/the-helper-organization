@@ -35,8 +35,8 @@ let theme = createTheme({
         fontFamily: 'Inter',
         fontWeight: 600,
         letterSpacing: '2.8px',
-        fontSize: '28px',
-        letterSpacing: '4.8px',
+        fontSize: '24px',
+        // letterSpacing: '4.8px',
         textTransform: 'uppercase',
         // '@media (max-width:640px)': {
         //     fontSize: '2.5rem',
@@ -76,6 +76,14 @@ let theme = createTheme({
         },
     },
     subtitle1: { // Banner
+      lineHeight: '22px',
+      fontWeight: '500',
+      textAlign: 'left',
+      // '@media (max-width:640px)': {
+      //     fontSize: '18px'
+      //   },
+  },
+    buttons: { // Banner
         lineHeight: '18px',
         fontWeight: '500',
         textAlign: 'left',

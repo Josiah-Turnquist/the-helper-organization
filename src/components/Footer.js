@@ -120,6 +120,7 @@ function Footer({ title, body1, body2, changeSection, Button }) {
 
                     </input>
                     <button onClick={() => {console.log('subscribed!')}} style={{
+                        minHeight: '40px',
                         height: '40px',
                         backgroundColor: '#FB8546',
                         borderWidth: '1px',
