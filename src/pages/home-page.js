@@ -130,7 +130,7 @@ function TeamMembers() {
                     CMO
                 </Typography>
             </TeamMember>
-            <TeamMember>
+            {/* <TeamMember>
                 <img src={Finance} alt="img of CFO" style={imageSX}>
 
                 </img>
@@ -153,7 +153,7 @@ function TeamMembers() {
                 <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
                     Media
                 </Typography>
-            </TeamMember>
+            </TeamMember> */}
         </TeamWrapper>
 
     );
