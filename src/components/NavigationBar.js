@@ -71,7 +71,7 @@ function NavigationBar({ title, activeSection, sections, changeSection }) {
                 </Typography>
             </a>
             <div style={{ display: window.innerWidth < 700 ? 'none' : 'flex' }}>
-                <a href="/#who-we-are" className="navbar-button" sx={hoverSX}>
+                <a href="/#who-we-are" className="navbar-button transition-all" sx={hoverSX}>
                     <Typography className="fade-in transition-all" variant="h2" >
                         Who We Are
                     </Typography>
