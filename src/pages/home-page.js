@@ -47,7 +47,7 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
     flexWrap: 'wrap',
     justifyContent: (window.innerWidth < 650 ? 'center' : 'flex-start'),
     alignItems: (window.innerWidth < 650 ? '750px' : '100vw'),
-    margin: (window.innerWidth < 650 ? '0rem' : '2em 2em 1em 2em'),
+    margin: (window.innerWidth < 650 ? '0rem' : '2em 1.5em 1em 2em'),
     maxWidth: (window.innerWidth < 650 ? '750px' : '100vw'),
   }));
 
@@ -56,6 +56,9 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
     minWidth: '140px',
     maxWidth: '160px',
     margin: (window.innerWidth < 650 ? '20px' : '3vw'),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   }));
 
 
@@ -90,7 +93,6 @@ function TeamMembers() {
                 <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '0.5rem 0 0', textAlign: 'center'}}>
                     Tim Cho
                 </Typography>
-                <br />
                 <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
                     CEO
                 </Typography>
@@ -102,7 +104,6 @@ function TeamMembers() {
                 <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
                     Josiah Turnquist
                 </Typography>
-                <br />
                 <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
                     COO
                 </Typography>
@@ -114,7 +115,6 @@ function TeamMembers() {
                 <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
                     TBA
                 </Typography>
-                <br />
                 <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
                     CFO
                 </Typography>
@@ -126,7 +126,6 @@ function TeamMembers() {
                 <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
                     TBA
                 </Typography>
-                <br />
                 <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
                     CMO
                 </Typography>
@@ -210,7 +209,7 @@ export default function HomePage() {
         <Typography className="fade-in" variant="h3" style={{ color: theme.palette.primary.white, maxWidth: (width < mobile ? '80vw' : '390px'), margin: (width < tablet ? '10vh 0 0 10vw' : '0 10vw')}}>
             {bannerTitle}
         </Typography>
-        <Typography className="fade-in" variant="subtitle1" style={{ color: theme.palette.primary.white, maxWidth: (width < tablet ? '80vw' : '45vw'), margin: (width < mobile ? '2em 10vw 2em 10vw' : '2em 40vw 2em 10vw')}}>
+        <Typography className="fade-in" variant="subtitle1" style={{ color: theme.palette.primary.white, maxWidth: (width < tablet ? '80vw' : '45vw'), margin: (width < mobile ? '2em 10vw 2em 10vw' : '2em 40vw 2em 10vw'), paddingRight: (width < mobile ? '0' : '10vw')}}>
             {bannerSubtitle}
         </Typography>
         <div>
@@ -221,21 +220,21 @@ export default function HomePage() {
                     </Typography>
                 </Button>
             </a>
-            <Button className="fade-in" bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
+            {/* <Button className="fade-in" bWidth={width} style={{ marginLeft: (width < mobile ? '15px' : '45px') }} backgroundColor={theme.palette.primary.accent}>
                 <Typography href="google.com" variant="buttons" style={{ color: theme.palette.primary.black, textAlign: 'center'}}>
                     Subscribe
                 </Typography>
-            </Button>
+            </Button> */}
         </div>
 
         <div id="who-we-are" style={{ backgroundColor: theme.palette.background2, width: '100vw', marginTop: '20%'}}>
-            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2em 2em 1em 2em'}}>
+            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'left' : 'left'), margin: '2em 1.5em 1em'}}>
                 WHO WE ARE
             </Typography>
             <Typography variant="body1" style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2.2em', maxWidth: '89vw'}}>
                 {ourStory}
             </Typography>
-            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'center' : 'left'), margin: '2em 2em 1em 2em'}}>
+            <Typography variant="h1" style={{ color: theme.palette.primary.white, textAlign: (window.innerWidth < 700 ? 'left' : 'left'), margin: '2em 1.5em 1em'}}>
                 OUR TEAM
             </Typography>
             <TeamMembers />
@@ -251,7 +250,7 @@ export default function HomePage() {
                 width: '110vw',
                 zIndex: '-10',
             }}/>    */}
-        <   Typography id="mission" variant="h1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'center', margin: '2em'}}>
+        <   Typography id="mission" variant="h1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: '2em 1.5em 2em'}}>
                 Our Mission
             </Typography>
         
@@ -261,8 +260,8 @@ export default function HomePage() {
 
             <br />
 
-            <div className="fade-in" sx={transitionSX} style={{ height: '1px', width: '20vw', backgroundColor: theme.palette.primary.white, margin: (width < tablet ? '3rem 3.2rem' : '12vw 0 0 46vw')}}/>
-            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: (width < tablet ? '3rem 3.2rem' : '3rem 0 5rem 45vw'), maxWidth: (width < tablet ? '90vw' : '45vw')}}>
+            <div className="fade-in" sx={transitionSX} style={{ height: '1px', width: '20vw', backgroundColor: theme.palette.primary.white, margin: (width < tablet ? '3rem 3.2rem' : '12vw 0 0 50vw')}}/>
+            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: (width < tablet ? '3rem 3.2rem' : '3rem 1.5em 5rem 50vw'), maxWidth: (width < tablet ? '90vw' : '50vw')}}>
                 "But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. Then your Father, who sees what is done in secret, will reward you." 
                 <br />
                  <> </>-  Matthew 6:3-4 (NIV)
