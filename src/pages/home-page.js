@@ -29,11 +29,13 @@ const Button = styled('button')(({ backgroundColor, bWidth }) => ({
     borderStyle: 'solid',
     borderWidth: '1px',
     position: 'relative',
+    color: 'white',
     backgroundColor: `${backgroundColor ? backgroundColor : 'transparent'}`,
     // background: `radial-gradient(circle at ${props.mouseX}px ${props.mouseY}px, #203E2580, #0E1B10 60%)`
     "&:hover": {
         borderColor: theme.palette.primary.accent,
         cursor: 'pointer',
+        // color: theme.palette.primary.accent2,
         backgroundColor: `${backgroundColor ? theme.palette.primary.accent2 : 'transparent'}`
     },
     transitionProperty: 'all',
@@ -190,7 +192,7 @@ export default function HomePage() {
         <div>
             <a href="https://www.paypal.com/paypalme/thehelperorg">
                 <Button className="fade-in" bWidth={width} style={{ marginLeft: '10vw' }} >
-                    <Typography variant="buttons" style={{ color: theme.palette.primary.white, textAlign: 'center'}}>
+                    <Typography variant="buttons" style={{ color: 'inherit', textAlign: 'center'}}>
                         Give
                     </Typography>
                 </Button>
