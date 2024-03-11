@@ -7,7 +7,7 @@ import theme from "../theme";
 import './NavigationBar.css';
 
 // Data
-import { links, email } from '../data';
+import { links } from '../data';
 
 
 // Icons

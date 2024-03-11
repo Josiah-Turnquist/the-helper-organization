@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { styled } from '@mui/system';
 
 // Data
-import { mission, verse, links } from '../data';
+import { links } from '../data';
 
 // Icons
 import LinkedInIcon from '@mui/icons-material/LinkedIn';

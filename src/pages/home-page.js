@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { styled } from '@mui/system';
-import { useRouteError } from "react-router-dom";
+// import { useRouteError } from "react-router-dom";
 import { Typography } from '@mui/material';
 
 // Data
@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 import Banner from '../banner.svg';
 import CEO from '../timcho.jpg';
 import COO from '../josiah.jpg';
-import Finance from '../profile-placeholder.jpg';
+// import Finance from '../profile-placeholder.jpg';
 import Media from '../profile-placeholder.jpg';
 import Bible from '../bible.jpg';
 
@@ -130,30 +130,6 @@ function TeamMembers() {
                     CMO
                 </Typography>
             </TeamMember>
-            {/* <TeamMember>
-                <img src={Finance} alt="img of CFO" style={imageSX}>
-
-                </img>
-                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
-                    Hunter Queseda
-                </Typography>
-                <br />
-                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center'}}>
-                    FINANCE
-                </Typography>
-            </TeamMember>
-            <TeamMember>
-                <img src={Media} alt="img of Media Coordinator" style={imageSX}>
-
-                </img>
-                <Typography variant="team" style={{ color: theme.palette.primary.white, fontSize: '16px', margin: '10px 0 0', textAlign: 'center'}}>
-                    Nathan Dungan
-                </Typography>
-                <br />
-                <Typography variant="teamTitle" style={{ color: theme.palette.primary.accent, fontSize: '14px', letterSpacing: '1px', margin: '3px 0', textAlign: 'center', textTransform: 'uppercase'}}>
-                    Media
-                </Typography>
-            </TeamMember> */}
         </TeamWrapper>
 
     );
@@ -168,7 +144,6 @@ const MissionContainer = styled('div')({
 });
 
 export default function HomePage() {
-    const [hash, setHash] = useState('about'); 
     const [section, setSection] = useState('Tech'); 
 
     // Sections
@@ -184,7 +159,7 @@ export default function HomePage() {
     }
     const mobile = 450;
     const tablet = 750;
-    const desktop = 1200;
+    // const desktop = 1200;
 
     useEffect(() => {
         window.addEventListener('resize', handleWindowSizeChange);

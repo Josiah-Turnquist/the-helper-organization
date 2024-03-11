@@ -1,5 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import { fontSize } from '@mui/system';
 
 let theme = createTheme({
   palette: {
