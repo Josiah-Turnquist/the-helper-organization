@@ -15,3 +15,14 @@ body {
   
 }
 
+a {
+  text-decoration-line: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #FB8546;
+}

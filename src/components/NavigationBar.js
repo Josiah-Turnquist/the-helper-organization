@@ -35,8 +35,21 @@ const Bar = styled('div')({
 
 // Icon Hover Effects
 
+// const NavButton = styled('button')(({ }) => ({
+//     fontSize: 32,
+//     marginLeft: '10px',
+//     marginRight: '10px',
+//     marginTop: '15px',
+//     color: theme.palette.primary.main,
+//     textDecorationLine: 'none',
+//     "&:hover": {
+//       color: theme.palette.primary.accent,
+//     //   cursor: 'pointer',
+//     }
+// }));
+
 const hoverSX = { // Annoying to get theme color into CSS so we're doing JS for this one.
-    fontSize: 32,
+    fontSize: '32px',
     marginLeft: '10px',
     marginRight: '10px',
     marginTop: '15px',
@@ -59,16 +72,16 @@ function NavigationBar({ title, activeSection, sections, changeSection }) {
             </a>
             <div style={{ display: window.innerWidth < 700 ? 'none' : 'flex' }}>
                 <a href="/#who-we-are" className="navbar-button" sx={hoverSX}>
-                    <Typography className="fade-in" variant="h2" >
+                    <Typography className="fade-in transition-all" variant="h2" >
                         Who We Are
                     </Typography>
                 </a>
-                <a href="/#mission" className="navbar-button" sx={hoverSX}>
-                    <Typography className="fade-in" variant="h2" >
+                <a href="/#mission" className="navbar-button transition-all" sx={hoverSX}>
+                    <Typography className="fade-in transition-all" variant="h2">
                         Mission
                     </Typography>
                 </a>
-                <a href="/#give" className="navbar-button" sx={hoverSX}>
+                <a href="/#give" className="navbar-button transition-all" sx={hoverSX}>
                     <Typography className="fade-in" variant="h2" >
                         Give
                     </Typography>
