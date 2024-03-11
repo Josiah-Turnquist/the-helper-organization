@@ -237,8 +237,8 @@ export default function HomePage() {
 
             <br />
 
-            <div className="fade-in" sx={transitionSX} style={{ height: '1px', width: '20vw', backgroundColor: theme.palette.primary.white, margin: (width < tablet ? '3rem 3.2rem' : '12vw 0 0 50vw')}}/>
-            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: (width < tablet ? '3rem 3.2rem' : '3rem 1.5em 5rem 50vw'), maxWidth: (width < tablet ? '90vw' : '50vw')}}>
+            <div className="fade-in" sx={transitionSX} style={{ height: '1px', width: '20vw', backgroundColor: theme.palette.primary.white, margin: (width < tablet ? '3rem 3.2rem' : '12vw 0 0 45vw')}}/>
+            <Typography className="fade-in" variant="body1" sx={transitionSX} style={{ color: theme.palette.primary.white, textAlign: 'left', margin: (width < tablet ? '3rem 3.2rem' : '3rem 0em 5rem 45vw'), width: (width < tablet ? '90vw' : '45vw')}}>
                 "But when you give to the needy, do not let your left hand know what your right hand is doing, so that your giving may be in secret. Then your Father, who sees what is done in secret, will reward you." 
                 <br />
                  <> </>-  Matthew 6:3-4 (NIV)
